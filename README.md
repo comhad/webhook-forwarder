@@ -18,3 +18,7 @@ you could put `Thank you :user:`.
 If you want help with URL encoding, use [CyberChef](https://gchq.github.io/CyberChef/#recipe=URL_Encode(false)), the variables may need encoding
 depending on what the names of the variables are, if you are not sure, just paste them into the CyberChef link and the output will be different from the input 
 if they need encoding.
+
+# Privacy
+This app is still under development, and for the sake of debugging it still logs IPs and the URLs used to access the app, this information is only
+accessible to me and is not moved or copied from heroku servers.
