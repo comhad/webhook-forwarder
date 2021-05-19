@@ -1,1 +1,1 @@
-web: flask wgsi:app
+web: flask run
