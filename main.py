@@ -19,7 +19,7 @@ def discordWebhook(id, token) :
         replaceWith = request.json[each]
         msg = msg.replace(replaceString, replaceWith)
 
-    webhookRepsonse = requests.post("https://discord.com/api/webhooks/" + id + "/" + token, data={ "content" : msg})
+    webhookRepsonse = requests.post("https://discord.com/api/webhooks/" + id + "/" + token, data={ "content" : msg })
     print(webhookRepsonse.text)
     return jsonify(webhookStatus = webhookRepsonse.status_code, status = 200, message = "success")
 

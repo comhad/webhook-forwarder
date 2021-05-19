@@ -22,3 +22,5 @@ if they need encoding.
 # Privacy
 This app is still under development, and for the sake of debugging it still logs IPs and the URLs used to access the app, this information is only
 accessible to me and is not moved or copied from heroku servers.
+
+**Since this is a heroku app, it will idle when not in use, this means a request may be held for a few seconds while it boots back up, but it will be answered**
