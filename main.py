@@ -3,10 +3,17 @@ import requests
 
 app = Flask(__name__)
 
+@app.route("/")
+def home() :
+    return open("home.html","r").read() # Not bothering with rendering, no variables
+
 @app.route("/discord/<id>/<token>", methods=["POST"])
 def discordWebhook(id, token) :
-    msg = request.args.get('msg') # If a user wants to include variables from post json like, name, they can just surround them by colons like :user:
+    msg = request.args.get('msg', default="No message was supplied") # If a user wants to include variables from post json like, name, they can just surround them by colons like :user:
 
+    if not request.json :
+        return jsonify(message="Not JSON", status = 400), 400
+        
     for each in request.json :
         replaceString = ":" + each + ":" # This is the variable string we want to replace
         replaceWith = request.json[each]
