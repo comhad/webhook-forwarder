@@ -16,7 +16,7 @@ def discordWebhook(id, token) :
         
     for each in request.json :
         replaceString = ":" + each + ":" # This is the variable string we want to replace
-        replaceWith = request.json[each]
+        replaceWith = str(request.json[each]) # Prevent bool error
         msg = msg.replace(replaceString, replaceWith)
 
     webhookRepsonse = requests.post("https://discord.com/api/webhooks/" + id + "/" + token, data={ "content" : msg })
