@@ -25,4 +25,5 @@ accessible to me and is not moved or copied from heroku servers.
 
 **Since this is a heroku app, it will idle when not in use, this means a request may be held for a few seconds while it boots back up, but it will be answered**
 
+# Bugs
 This is still a new app and you are welcome to open issues if you encounter a bug in the app.
