@@ -15,7 +15,7 @@ followed by a space and your URL with no `?msg=` on the end of it, you should re
 and a message will be posted in the channel where your webhook is located. This proves your URL is correctly formatted.
 
 If you receive a response that looks like
-```{"message":"success","status":200,"webhookStatus":401}```
+```{"message":"success","status":200,"webhookStatus":401}``` or ```'{"code":404,"message":"File not found"}'```
 then the URL is incorrectly formatted and you did not input the webhook link correctly, refer to the README for info on how to do that.
 
 **Describe the bug**
