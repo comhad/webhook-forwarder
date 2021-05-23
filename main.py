@@ -1,4 +1,5 @@
 from flask import Flask, json, request, jsonify
+from flask_cors import CORS, cross_origin
 import requests
 
 app = Flask(__name__)
@@ -8,6 +9,7 @@ def home() :
     return open("home.html","r").read() # Not bothering with rendering, no variables
 
 @app.route("/discord/<int:id>/<string:token>", methods=["POST"]) # The int allows input validation
+@cross_origin()
 def discordWebhook(id, token) :
     msg = request.args.get('msg', default="No message was supplied") # If a user wants to include variables from post json like, name, they can just surround them by colons like :user:
 
