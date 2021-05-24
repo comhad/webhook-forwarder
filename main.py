@@ -1,4 +1,3 @@
-from cairo import Status
 from flask import Flask, json, request, jsonify
 from flask_cors import CORS, cross_origin
 import requests
