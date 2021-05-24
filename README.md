@@ -14,3 +14,6 @@ This is still a new app and you are welcome to open issues if you encounter a bu
 
 ## Target service requests
 You can make a request in the issues tab for a service to forward webhooks to, you must have enough information on how webhooks for that service work and what you want the webhook to do, for example, for discord you could provide a link to the webhook developer docs and state that you would like to forward the webhook to discord in webhook message. Use the template so it will be tagged with a new target service by default
+
+## Contributions
+Contributuions are welcome, just read [CONTRIBUTING.md](https://github.com/comhad/webhook-forwarder/blob/main/CONTRIBUTING.md) for advice on how to start contributing before you begin.
