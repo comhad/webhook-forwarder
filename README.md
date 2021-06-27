@@ -1,3 +1,5 @@
+**Due to lack of use, the heroku app for this service will be deactivated in July 2021, the code will remain public but the repo will not be archived**
+
 # webhook-forwarder
 This is an app deployed on heroku that allows users to quickly forward webhooks with out hassle. It is deployed [here](https://webhook-forward.herokuapp.com/) and is open to use by anyone. Its only function is to currently forward webhooks to discord from any site. The code works in a way that allows you to include any variable from a webhook, meaning this is suitable for all sites which use JSON POST webhooks.
 
